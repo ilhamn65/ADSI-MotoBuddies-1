@@ -1,7 +1,7 @@
 <h1>Praktikum Analisis dan Desain SI, Tahap Implementasi</h1>
 <h3>Project Web App MotoBuddies</h3> 
 
-    <h4>Penyusun</h4>
+<h4>Penyusun</h4>
 <ul>
     <li>Ar Rafii Alfa</li> 
     <li>Naira Ghassaani</li> 
@@ -11,14 +11,14 @@
     <li>Ersa Sa’dul Asyhar</li> 
 </ul>
 
-    <h4>Detail Aplikasi</h4>
+<h4>Detail Aplikasi</h4>
 <p>
     Aplikasi dikembangkan menggunakan framework Laravel dan Tailwindcss 
 </p>
 
     
 <h4>Tentang Aplikasi Motobuddies</h4>
-    <p>
+<p>
 MotoBuddies merupakan aplikasi dari PT MotoBuddies yang bergerak di bidang otomotif. PT MotoBuddies ingin menerapkan sistem informasi di perusahananya. Tujuan utamanya ialah untuk meningkatkan pelayanan terhadap pelangganya yang telah membeli produk atau menggunakan jasanya. Beberapa kebutuhan akhirnya ditemukan dari hasil diskusi dengan manajer dan staff dealer sekaligus wawancara dengan para pelanggan.
 
 Berdasarkan hasil tersebut, ditemukan beberapa kebutuhan, diantaranya sistem harus dapat membantu pelanggan dalam merekomendasikan jadwal servis berdasarkan dengan track terhadap aktivitas kendaraan dan tipe kendaraan. Misalnya untuk tipe kendaraan matic, pelanggan direkomendasikan untuk melakukan penggantian oli per- 15.000 km perjalanan. Selain rekomendasi dari sistem, pelanggan juga dapat menentukan sendiri kebutuhan servis yang diinginkan. Hal ini akan akan sangat membantu pelanggan dalam memenuhi perawatan kendaraan mereka dan memperkirakan budget yang harus mereka keluarkan.
@@ -37,4 +37,4 @@ Namun, untuk dapat menggunakan sistem tersebut, pelanggan terlebih dahulu diharu
 
 Setelah semua data berhasil diverifikasi, pelanggan login dengan memasukkan email dan password yang telah dibuat sebelumnya. Setiap aktivitas yang dilakukan oleh pelanggan melalui sistem akan tercatat dalam database. Data yang ada dikelola oleh administrator agar dapat menjadi bahan pertimbangan manajer dealer dalam mengambil keputusan. Data tersebut Juga digunakan sebagai informasi aktual mengenai jumlah pelanggan dari dealer tersebut. Lebih jauh lagi, data ini juga dapat digunakan oleh manajer pusat untuk mengetahui produk apa saja yang paling sering digunakan oleh pelanggan yang nantinya dapat menjadi informasi strategis untuk kemajuan perusahaan.
 
-    </p>
+</p>
