@@ -1,22 +1,24 @@
 <h1>Praktikum Analisis dan Desain SI, Tahap Implementasi</h1>
 <h3>Project Web App MotoBuddies<h3> 
 
-Penyusun
+    <h3>Penyusun</h3>
+<ul>
+    <li>Ar Rafii Alfa</li> 
+    <li>Naira Ghassaani</li> 
+    <li>Rizal Akbar S. F. P.</li> 
+    <li>Ilham Nuansa S. P. P.</li> 
+    <li>Hana Shofiyah</li>
+    <li>Ersa Sa’dul Asyhar</li> 
+</ul>
 
-Ar Rafii Alfa 
-Naira Ghassaani 
-Rizal Akbar S. F. P. 
-Ilham Nuansa S. P. P. 
-Hana Shofiyah
-Ersa Sa’dul Asyhar 
+    <h3>Detail Aplikasi</h3>
+<p>
+    Aplikasi dikembangkan menggunakan framework Laravel dan Tailwindcss 
+</p>
 
-
-Detail Aplikasi
-Framework = Laravel
-Styling   = Tailwindcss
-
-
-Tentang Aplikasi Motobuddies
+    
+<h3>Tentang Aplikasi Motobuddies</h3>
+    <p>
 MotoBuddies merupakan aplikasi dari PT MotoBuddies yang bergerak di bidang otomotif. PT MotoBuddies ingin menerapkan sistem informasi di perusahananya. Tujuan utamanya ialah untuk meningkatkan pelayanan terhadap pelangganya yang telah membeli produk atau menggunakan jasanya. Beberapa kebutuhan akhirnya ditemukan dari hasil diskusi dengan manajer dan staff dealer sekaligus wawancara dengan para pelanggan.
 
 Berdasarkan hasil tersebut, ditemukan beberapa kebutuhan, diantaranya sistem harus dapat membantu pelanggan dalam merekomendasikan jadwal servis berdasarkan dengan track terhadap aktivitas kendaraan dan tipe kendaraan. Misalnya untuk tipe kendaraan matic, pelanggan direkomendasikan untuk melakukan penggantian oli per- 15.000 km perjalanan. Selain rekomendasi dari sistem, pelanggan juga dapat menentukan sendiri kebutuhan servis yang diinginkan. Hal ini akan akan sangat membantu pelanggan dalam memenuhi perawatan kendaraan mereka dan memperkirakan budget yang harus mereka keluarkan.
@@ -34,3 +36,5 @@ Pada aplikasi ini juga dapat menampilkan profil dan informasi dari pengguna. Pro
 Namun, untuk dapat menggunakan sistem tersebut, pelanggan terlebih dahulu diharuskan untuk membuat akun dan mengisi data-data pelanggan. Data utama tersebut meliputi nama, umur, jenis kelamin, alamat, no telepon dan email termasuk password serta tipe kendaraan. Setelah membuat akun, pihak administrator akan mengirimkan pesan verifikasi melalui email untuk memastikan apakah data yang diisi pelanggan sudah benar atau belum. Khususnya untuk tipe kendaraan, karena kesalahan pada input tipe kendaraan akan mempengaruhi rekomendasi dan pelayanan yang sistem berikan kepada pelanggan.
 
 Setelah semua data berhasil diverifikasi, pelanggan login dengan memasukkan email dan password yang telah dibuat sebelumnya. Setiap aktivitas yang dilakukan oleh pelanggan melalui sistem akan tercatat dalam database. Data yang ada dikelola oleh administrator agar dapat menjadi bahan pertimbangan manajer dealer dalam mengambil keputusan. Data tersebut Juga digunakan sebagai informasi aktual mengenai jumlah pelanggan dari dealer tersebut. Lebih jauh lagi, data ini juga dapat digunakan oleh manajer pusat untuk mengetahui produk apa saja yang paling sering digunakan oleh pelanggan yang nantinya dapat menjadi informasi strategis untuk kemajuan perusahaan.
+
+    </p>
