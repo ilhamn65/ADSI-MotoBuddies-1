@@ -1,5 +1,8 @@
+
+
 @extends('layouts.app')
 
+
 @section('content')
-index
+asdasdasd
 @endsection

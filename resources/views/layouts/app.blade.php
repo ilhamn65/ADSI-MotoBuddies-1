@@ -11,8 +11,8 @@
 </head>
 
 <body>
-
-    <h1>Motobuddy</h1>
+    @yield('content')
+    
 </body>
 
 </html>
