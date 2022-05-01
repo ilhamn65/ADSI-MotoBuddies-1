@@ -1,29 +1,22 @@
-Analisis dan Desain Sistem Informasi
-Program Studi Sistem Informasi
-Modul Pendekatan Pemodelan Berorientasi Object
-
-Dosen Pengampu Kelas SI-B
-
-Fajar Pradana, S.ST., M.Eng.
-NIK/NIP. 20112345671001
+Praktikum Analisis dan Desain SI, Tahap Implementasi
+Project Web App MotoBuddies 
 
 Penyusun
 
-Kelompok 1
+Ar Rafii Alfa 
+Naira Ghassaani 
+Rizal Akbar S. F. P. 
+Ilham Nuansa S. P. P. 
+Hana Shofiyah
+Ersa Sa’dul Asyhar 
 
-Ar Rafii Alfa - NIM. 175150407111024 - [AA]
-Naira Ghassaani - NIM. 205150401111054 - [NG]
-Rizal Akbar S. F. P. - NIM. 205150407111016 - [RP]
-Ilham Nuansa S. P. P. - NIM. 205150407111020 - [IN]
-Hana Shofiyah - NIM. 205150407111024 - [HS]
-Ersa Sa’dul Asyhar - NIM. 205150407111054 - [ES]
 
-Asisten
+Detail Aplikasi
+Framework = Laravel
+Styling   = Tailwindcss
 
-Alfina Ayu Aulia - NIM. 195150400111046
-Anatasia Griselda Ferina Budiargo - NIM. 195150401111015
 
-User Story
+Tentang Aplikasi Motobuddies
 MotoBuddies merupakan aplikasi dari PT MotoBuddies yang bergerak di bidang otomotif. PT MotoBuddies ingin menerapkan sistem informasi di perusahananya. Tujuan utamanya ialah untuk meningkatkan pelayanan terhadap pelangganya yang telah membeli produk atau menggunakan jasanya. Beberapa kebutuhan akhirnya ditemukan dari hasil diskusi dengan manajer dan staff dealer sekaligus wawancara dengan para pelanggan.
 
 Berdasarkan hasil tersebut, ditemukan beberapa kebutuhan, diantaranya sistem harus dapat membantu pelanggan dalam merekomendasikan jadwal servis berdasarkan dengan track terhadap aktivitas kendaraan dan tipe kendaraan. Misalnya untuk tipe kendaraan matic, pelanggan direkomendasikan untuk melakukan penggantian oli per- 15.000 km perjalanan. Selain rekomendasi dari sistem, pelanggan juga dapat menentukan sendiri kebutuhan servis yang diinginkan. Hal ini akan akan sangat membantu pelanggan dalam memenuhi perawatan kendaraan mereka dan memperkirakan budget yang harus mereka keluarkan.
