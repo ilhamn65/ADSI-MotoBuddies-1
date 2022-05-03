@@ -77,7 +77,7 @@
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-whishlist block text-xs">
-                <img src="/images/CONTACT.png" class="mx-auto h-6 " alt="CONTACT US"> Contact Us
+                <img src="/images/CONTACT.png" class="mx-auto h-6 " alt="CONTACT US"> Call Us
             </span>
         </a>
         <a href=#
