@@ -7,7 +7,7 @@
         <img src="/images/VOUCHER1.png" class="h-32 mx-auto MB-3" alt="VOUCHER">
 
 
-        <div class="grid grid-cols-3 gap-4 text-center my-12 ">
+        <div class="grid grid-cols-3 gap-4 text-center my-12 text-sm ">
             <div>
 
                 <img src="/images/FIND.png" class="h-16 mx-auto" alt="find dealer">
