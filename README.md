@@ -1,5 +1,4 @@
-<h1>Praktikum Analisis dan Desain SI, Tahap Implementasi</h1>
-<h3>Project Web App MotoBuddies</h3>
+<h1>Project Web App MotoBuddies</h1>
 
 <h4>Penyusun</h4>
 <ul>
