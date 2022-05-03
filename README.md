@@ -1,5 +1,5 @@
-<h1>Branch Development Aplikasi</h1>
-<h3>Project Web App MotoBuddies</h3> 
+<h1>Praktikum Analisis dan Desain SI, Tahap Implementasi</h1>
+<h3>Project Web App MotoBuddies</h3>
 
 <h4>Penyusun</h4>
 <ul>
@@ -16,7 +16,6 @@
     Aplikasi dikembangkan menggunakan framework Laravel dan Tailwindcss 
 </p>
 
-    
 <h4>Tentang Aplikasi Motobuddies</h4>
 <p>
 MotoBuddies merupakan aplikasi dari PT MotoBuddies yang bergerak di bidang otomotif. PT MotoBuddies ingin menerapkan sistem informasi di perusahananya. Tujuan utamanya ialah untuk meningkatkan pelayanan terhadap pelangganya yang telah membeli produk atau menggunakan jasanya. Beberapa kebutuhan akhirnya ditemukan dari hasil diskusi dengan manajer dan staff dealer sekaligus wawancara dengan para pelanggan.

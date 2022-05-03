@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Motobuddies</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
 </head>
 
-{{-- top navbar --}}
+
 <nav aria-label="sr-only" id="top-navigation" class=" bg-blue-400 p-6 text-white  rounded-b-2xl ">
     <div id="notification" class="flex justify-end gap-2">
 
@@ -41,20 +41,20 @@
 
 <body class="bg-gray-300  max-w-sm mx-auto">
 
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 
 
 </body>
 
 
-{{-- bottom navbar --}}
+
 <nav aria-label="sr-only" id="bottom-navigation"
     class="fixed inset-x-0 bottom-0 max-w-sm mx-auto py-6 px-3 block   bg-white shadow">
     <div id="tabs" class="flex justify-between gap-4">
 
         <a href="#"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-            {{-- icon here --}}
+            
             <span class="tab tab-home block text-xs">
                 <img src="/images/HOME.png" class="mx-auto h-8 " alt="HOME">Home
             </span>
@@ -91,3 +91,4 @@
 </nav>
 
 </html>
+<?php /**PATH D:\Web development\motobuddies-app\resources\views/layouts/app.blade.php ENDPATH**/ ?>

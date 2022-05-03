@@ -561,8 +561,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-wrap {
   flex-wrap: wrap;
 }
-.items-center {
-  align-items: center;
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-end {
   justify-content: flex-end;
