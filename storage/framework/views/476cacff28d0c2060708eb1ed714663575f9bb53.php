@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Motobuddies</title>
-    <link rel="stylesheet" href="<?php echo e(asset('css/app.css')); ?>">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 
 
@@ -49,42 +49,42 @@
 
 
 <nav aria-label="sr-only" id="bottom-navigation"
-    class="fixed inset-x-0 bottom-0 max-w-sm mx-auto py-6 px-3 block   bg-white shadow">
+    class="fixed inset-x-0 bottom-0 max-w-sm mx-auto py-2 px-3 block   bg-white shadow">
     <div id="tabs" class="flex justify-between gap-4">
 
         <a href="#"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
             
             <span class="tab tab-home block text-xs">
-                <img src="/images/HOME.png" class="mx-auto h-8 " alt="HOME">Home
+                <img src="/images/HOME.png" class="mx-auto h-6 " alt="HOME">Home
             </span>
         </a>
         <a href="#"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-kategori block text-xs">
-                <img src="/images/HISTORY.png" class="mx-auto h-8 " alt="HISTORY"> History
+                <img src="/images/HISTORY.png" class="mx-auto h-6 " alt="HISTORY"> History
             </span>
         </a>
         <a href="#"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-explore block text-xs">
-                <img src="/images/EMERGENCY.png" class="mx-auto h-8 " alt="EMERGENCY"> Emergency
+                <img src="/images/EMERGENCY.png" class="mx-auto h-6 " alt="EMERGENCY"> Emergency
             </span>
         </a>
         <a href="#"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-whishlist block text-xs">
-                <img src="/images/CONTACT.png" class="mx-auto h-8 " alt="CONTACT US"> Contact Us
+                <img src="/images/CONTACT.png" class="mx-auto h-6 " alt="CONTACT US"> Contact Us
             </span>
         </a>
         <a href=#
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-account block text-xs">
-                <img src="/images/PROFILE.png" class="mx-auto h-8 " alt="PROFILE"> Profile
+                <img src="/images/PROFILE.png" class="mx-auto h-6 " alt="PROFILE"> Profile
             </span>
         </a>
     </div>

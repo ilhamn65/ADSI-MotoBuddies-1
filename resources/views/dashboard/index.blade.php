@@ -10,34 +10,34 @@
         <div class="grid grid-cols-3 gap-4 text-center my-12 ">
             <div>
 
-                <img src="/images/FIND.png" class="h-24 mx-auto" alt="find dealer">
+                <img src="/images/FIND.png" class="h-16 mx-auto" alt="find dealer">
 
                 <span>Find Dealer</span>
             </div>
 
             <div>
 
-                <img src="/images/BOOK.png" class="h-24 mx-auto" alt="BOOK">
+                <img src="/images/BOOK.png" class="h-16 mx-auto" alt="BOOK">
                 <span>Book Servis</span>
             </div>
             <div>
 
-                <img src="/images/SPAREPARTS.png" class="h-24 mx-auto" alt="SPAREPARTS">
+                <img src="/images/SPAREPARTS.png" class="h-16 mx-auto" alt="SPAREPARTS">
                 <span>Spare Parts</span>
             </div>
             <div>
 
-                <img src="/images/TIPS.png" class="h-24 mx-auto" alt="TIPSTRICKS">
+                <img src="/images/TIPS.png" class="h-16 mx-auto" alt="TIPSTRICKS">
                 <span>Tips and Tricks</span>
             </div>
             <div>
 
-                <img src="/images/SERVICES.png" class="h-24 mx-auto" alt="SERVICES">
+                <img src="/images/SERVICES.png" class="h-16 mx-auto" alt="SERVICES">
                 <span>Pilihan Servis</span>
             </div>
             <div>
 
-                <img src="/images/SCHEDULE.png" class="h-24 mx-auto" alt="SCHEDULE">
+                <img src="/images/SCHEDULE.png" class="h-16 mx-auto" alt="SCHEDULE">
                 <span>Jadwal Servis</span>
             </div>
 
