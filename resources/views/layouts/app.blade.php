@@ -9,69 +9,85 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
-<body class="bg-gray-200">
-    <section id="top-navigation" class="fixed inset-x-0 z-10 bg-blue-400 p-6 text-white  rounded-b-2xl ">
-        <div id="notification" class="flex justify-end gap-2">
+{{-- top navbar --}}
+<nav aria-label="sr-only" id="top-navigation" class=" bg-blue-400 p-6 text-white  rounded-b-2xl ">
+    <div id="notification" class="flex justify-end gap-2">
 
-            <a>
-                <span>Cart</span>
-            </a>
-            <a>
-                <span>Notif</span>
-            </a>
-            <a>
-                <span>Mssge</span>
-            </a>
+        <a>
+            <span><img src="/images/CART.png" class="mx-auto" alt="CART"></span>
+        </a>
+        <a>
+            <span><img src="/images/BELL.png" class="mx-auto  pr-1 " alt="NOTIFICATION"></span>
+        </a>
+        <a>
+            <span><img src="/images/MESSEGE.png" class="mx-auto" alt="MSG"></span>
+        </a>
 
-        </div>
-
-        <div id="search-bar">
-            <div>Selamat Datang, Justin !</div>
-            <form action="">
-
-                <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" value="Cari Sesuatu ?">
-            </form>
-        </div>
-
-
-
-    </section>
-    @yield('content')
-
-    <!-- component -->
-    <div class="w-full h-screen">
-
-        <nav id="bottom-navigation" class="p-6 block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-            <div id="tabs" class="flex justify-between">
-                <a href="#"
-                    class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-                    {{-- icon here --}}
-                    <span class="tab tab-home block text-xs">Beranda</span>
-                </a>
-                <a href="#"
-                    class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-
-                    <span class="tab tab-kategori block text-xs">History</span>
-                </a>
-                <a href="#"
-                    class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-
-                    <span class="tab tab-explore block text-xs">Emergency</span>
-                </a>
-                <a href="#"
-                    class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-
-                    <span class="tab tab-whishlist block text-xs">Contact Us</span>
-                </a>
-                <a href=#
-                    class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-
-                    <span class="tab tab-account block text-xs">Profile</span>
-                </a>
-            </div>
-        </nav>
     </div>
 
+    <div id="search-bar">
+        <p class="my-2">Selamat Datang, Customer !</p>
+        <form action="">
+
+            <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">
+        </form>
+    </div>
+
+
+
+
+
+</nav>
+
+<body class="bg-gray-300  max-w-sm mx-auto">
+
+    @yield('content')
+
+
 </body>
+
+
+{{-- bottom navbar --}}
+<nav aria-label="sr-only" id="bottom-navigation"
+    class="fixed inset-x-0 bottom-0 max-w-sm mx-auto py-6 px-3 block   bg-white shadow">
+    <div id="tabs" class="flex justify-between gap-4">
+
+        <a href="#"
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+            {{-- icon here --}}
+            <span class="tab tab-home block text-xs">
+                <img src="/images/HOME.png" class="mx-auto h-8 " alt="HOME">Home
+            </span>
+        </a>
+        <a href="#"
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+
+            <span class="tab tab-kategori block text-xs">
+                <img src="/images/HISTORY.png" class="mx-auto h-8 " alt="HISTORY"> History
+            </span>
+        </a>
+        <a href="#"
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+
+            <span class="tab tab-explore block text-xs">
+                <img src="/images/EMERGENCY.png" class="mx-auto h-8 " alt="EMERGENCY"> Emergency
+            </span>
+        </a>
+        <a href="#"
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+
+            <span class="tab tab-whishlist block text-xs">
+                <img src="/images/CONTACT.png" class="mx-auto h-8 " alt="CONTACT US"> Contact Us
+            </span>
+        </a>
+        <a href=#
+            class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+
+            <span class="tab tab-account block text-xs">
+                <img src="/images/PROFILE.png" class="mx-auto h-8 " alt="PROFILE"> Profile
+            </span>
+        </a>
+    </div>
+</nav>
 
 </html>
