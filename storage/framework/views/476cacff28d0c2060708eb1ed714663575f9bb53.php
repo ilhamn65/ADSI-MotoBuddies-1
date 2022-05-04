@@ -11,17 +11,28 @@
 
 
 <nav aria-label="sr-only" id="top-navigation" class=" bg-blue-400 p-6 text-white  rounded-b-2xl ">
-    <div id="notification" class="flex justify-end gap-2">
+    <div id="notification" class="flex justify-between mb-8">
 
-        <a>
-            <span><img src="/images/CART.png" class="mx-auto" alt="CART"></span>
-        </a>
-        <a>
-            <span><img src="/images/BELL.png" class="mx-auto  pr-1 " alt="NOTIFICATION"></span>
-        </a>
-        <a>
-            <span><img src="/images/MESSEGE.png" class="mx-auto" alt="MSG"></span>
-        </a>
+        <div>
+            <a href="<?php echo e(url()->previous()); ?>">
+                <span><img src="/images/BACK.png" class="mx-auto h-4" alt="CART"></span>
+            </a>
+        </div>
+
+        <div class="flex justify-end gap-2">
+
+            <a>
+                <span><img src="/images/CART.png" class="mx-auto h-4" alt="CART"></span>
+            </a>
+            <a>
+                <span><img src="/images/BELL.png" class="mx-auto h-4  pr-1 " alt="NOTIFICATION"></span>
+            </a>
+            <a>
+                <span><img src="/images/MESSEGE.png" class="mx-auto h-4" alt="MSG"></span>
+            </a>
+        </div>
+
+
 
     </div>
 
