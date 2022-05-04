@@ -18,7 +18,7 @@
                 <div>
 
                     <label class="text-sm" for="date">Tanggal datang</label>
-                    <input class="w-full" name="date" type="date" value="">
+                    <input class="w-56" name="date" type="date" value="">
                 </div>
             </div>
 
@@ -28,7 +28,7 @@
                 <div>
 
                     <label class="text-sm" for="model">Merek & model</label>
-                    <input class="w-full" type="text" value="" name="model">
+                    <input class="w-56" type="text" value="" name="model">
                 </div>
             </div>
             <div class=" flex justify-start items-end gap-2 mb-2">
@@ -37,7 +37,7 @@
                 <div>
 
                     <label class="text-sm" for="problemDesc">Deskripsi permasalahan</label>
-                    <input name="problemDesc" class="w-full" type="text" value="">
+                    <input name="problemDesc" class="w-56" type="text" value="">
                 </div>
             </div>
 
