@@ -52,7 +52,7 @@
     class="fixed inset-x-0 bottom-0 max-w-sm mx-auto py-2 px-3 block   bg-white shadow">
     <div id="tabs" class="flex justify-between gap-4">
 
-        <a href="#"
+        <a href="<?php echo e(route('dashboard')); ?>"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
             
             <span class="tab tab-home block text-xs">
