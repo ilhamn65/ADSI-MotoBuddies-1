@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookServiceController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,13 @@ use App\Http\Controllers\BookServiceController;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('dashboard.index');
 })->name('dashboard');
 
+
+Route::get('/auth/register', [RegisterController::class, 'index'])->name('register');
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book');
