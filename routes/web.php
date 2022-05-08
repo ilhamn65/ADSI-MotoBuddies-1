@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookServiceController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,5 @@ Route::get('/', function () {
 
 
 Route::get('/auth/register', [RegisterController::class, 'index'])->name('register');
-
+Route::get('/auth/login', [LoginController::class, 'index'])->name('login');
 Route::get('/book', [BookServiceController::class, 'index'])->name('book');
