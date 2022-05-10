@@ -13,11 +13,21 @@
 <nav aria-label="sr-only" id="top-navigation" class=" bg-blue-400 p-6 text-white  rounded-b-2xl ">
     <div id="notification" class="flex justify-between mb-8">
 
+
+
+
+        
         <div>
-            <a href="<?php echo e(url()->previous()); ?>">
-                <span><img src="/images/BACK.png" class="mx-auto h-4" alt="CART"></span>
-            </a>
+            
+            <?php if(!(Route::getCurrentRoute()->uri == '/')): ?>
+                <a href="<?php echo e(url()->previous()); ?>">
+                    <span><img src="/images/BACK.png" class="mx-auto h-4" alt="CART"></span>
+                </a>
+            <?php endif; ?>
         </div>
+
+        
+
 
         <div class="flex justify-end gap-2">
 
@@ -38,7 +48,9 @@
 
     <?php if(auth()->guard()->check()): ?>
         <div id="search-bar">
-            <p class="my-2">Selamat Datang, Customer !</p>
+
+
+            <p class="my-2">Selamat Datang, <?php echo e(auth()->user()->nama_lengkap); ?> !</p>
             <form action="">
 
                 <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">
