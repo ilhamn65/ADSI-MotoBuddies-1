@@ -30,11 +30,12 @@
                                     {{-- nama depan --}}
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Nama depan</span>
-                                        <input name="fname" placeholder="" type="text" value="{{ old('fname') }}"
-                                            class="@error('fname') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                                        <input name="first_name" placeholder="" type="text"
+                                            value="{{ old('first_name') }}"
+                                            class="@error('first_name') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
 
-                                        @error('fname')
+                                        @error('first_name')
                                             <span class="px-1 text-sm text-red-600">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -42,11 +43,12 @@
                                     {{-- nama belakang --}}
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Nama belakang</span>
-                                        <input name="lname" placeholder="" type="text" value="{{ old('lname') }}"
-                                            class="@error('lname') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                                        <input name="last_name" placeholder="" type="text"
+                                            value="{{ old('last_name') }}"
+                                            class="@error('last_name') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
 
-                                        @error('lname')
+                                        @error('last_name')
                                             <span class="px-1 text-sm text-red-600">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -55,12 +57,12 @@
                                     {{-- tanggal lahir --}}
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Tanggal lahir</span>
-                                        <input name="birthdate" placeholder="" type="Date"
-                                            value="{{ old('birthdate') }}"
-                                            class="@error('birthdate') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                                        <input name="tanggal_lahir" placeholder="" type="Date"
+                                            value="{{ old('tanggal_lahir') }}"
+                                            class="@error('tanggal_lahir') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
 
-                                        @error('birthdate')
+                                        @error('tanggal_lahir')
                                             <span class="px-1 text-sm text-red-600">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -80,12 +82,12 @@
                                     {{-- no. telepon --}}
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Nomor Telepon</span>
-                                        <input name="phone_number" placeholder="" type="tel"
-                                            value="{{ old('phone_number') }}"
-                                            class="@error('phone_number') border-red-500 @enderror text-md block px-3 py-2  rounded-lg w-full 
+                                        <input name="no_telepon" placeholder="" type="tel"
+                                            value="{{ old('no_telepon') }}"
+                                            class="@error('no_telepon') border-red-500 @enderror text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
 
-                                        @error('phone_number')
+                                        @error('no_telepon')
                                             <span class="px-1 text-sm text-red-600">{{ $message }}</span>
                                         @enderror
                                     </div>
@@ -107,6 +109,8 @@
 
                                         </div>
                                     </div>
+
+                                    {{-- password confirmation --}}
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Confirm Password</span>
                                         <div class="relative">
@@ -120,10 +124,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="flex justify-between"> <label
-                                            class="block text-gray-500 font-bold my-4"><a href="#"
-                                                class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400"><span>Forgot
-                                                    Password?</span></a></label></div>
+
 
                                     <button
                                         class="mt-3 text-lg font-semibold 

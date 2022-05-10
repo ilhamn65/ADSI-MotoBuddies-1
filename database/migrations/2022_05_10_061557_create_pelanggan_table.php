@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pelanggan', function (Blueprint $table) {
+        Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
             $table->string('nama_lengkap');
-            $table->string('tanggal_lahir');
-            $table->string('alamat');
+            $table->Date('tanggal_lahir');
+            $table->string('alamat')->nullable();
             $table->string('no_telepon');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pelanggan');
+        Schema::dropIfExists('pelanggans');
     }
 };
