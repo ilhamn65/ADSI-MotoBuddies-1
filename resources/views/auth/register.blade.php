@@ -132,6 +132,17 @@
                 px-6 py-3 block shadow-xl hover:text-white hover:bg-blue-700">
                                         Sign Up
                                     </button>
+
+                                    <div class="my-3 ">
+
+                                        <p class="">Already have an account ? Sign In
+                                            <span class="text-blue-700">
+                                                <a href="{{ route('login') }}">
+                                                    Here
+                                                </a>
+                                            </span>
+                                        </p>
+                                    </div>
                                 </div>
                             </form>
 

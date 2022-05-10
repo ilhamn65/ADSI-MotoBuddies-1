@@ -65,12 +65,25 @@
                                                 Me </span></label> <label class="block text-gray-500 font-bold my-4"><a
                                                 href="#"
                                                 class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400"><span>Forgot
-                                                    Password?</span></a></label></div> <button
+                                                    Password?</span></a></label></div>
+                                    <button
                                         class="mt-3 text-lg font-semibold 
                 bg-gray-800 w-full text-white rounded-lg
                 px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
                                         Sign In
                                     </button>
+
+                                    <div class="my-3 ">
+
+                                        <p class="">Do not have an account ? Register
+                                            <span class="text-blue-700">
+                                                <a href="{{ route('register') }}">
+                                                    Here
+                                                </a>
+                                            </span>
+                                        </p>
+                                    </div>
+
                                 </div>
                             </form>
 
