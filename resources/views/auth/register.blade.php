@@ -57,7 +57,7 @@
                                         <span class="px-1 text-sm text-gray-600">Password</span>
                                         <div class="relative">
                                             <input name="password" placeholder="" type='password'
-                                                class="@error('passsword') border-red-500 @enderror text-md block px-3 py-2 rounded-lg w-full 
+                                                class=" @error('password') border-red-500 @enderror text-md block px-3 py-2 rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md
                 focus:placeholder-gray-500
                 focus:bg-white 
@@ -89,8 +89,8 @@
 
                                     <button
                                         class="mt-3 text-lg font-semibold 
-                bg-gray-800 w-full text-white rounded-lg
-                px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
+                bg-blue-600 w-full text-white rounded-lg
+                px-6 py-3 block shadow-xl hover:text-white hover:bg-blue-700">
                                         Sign Up
                                     </button>
                                 </div>
