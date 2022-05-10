@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookServiceController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
+
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +19,7 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-
+Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 Route::get('/', function () {
     return view('dashboard.index');
@@ -29,5 +32,6 @@ Route::post('/auth/register', [RegisterController::class, 'store']);
 Route::get('/auth/login', [LoginController::class, 'index'])->name('login');
 Route::post('/auth/login', [LoginController::class, 'store']);
 
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
