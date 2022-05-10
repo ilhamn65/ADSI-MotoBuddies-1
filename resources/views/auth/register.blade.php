@@ -27,15 +27,40 @@
                                 @csrf
                                 <div class="mx-auto max-w-lg">
 
-                                    {{-- username --}}
+                                    {{-- nama depan --}}
                                     <div class="py-2">
-                                        <span class="px-1 text-sm text-gray-600">Username</span>
-                                        <input name="username" placeholder="" type="text"
-                                            value="{{ old('username') }}"
-                                            class="@error('username') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                                        <span class="px-1 text-sm text-gray-600">Nama depan</span>
+                                        <input name="fname" placeholder="" type="text" value="{{ old('fname') }}"
+                                            class="@error('fname') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
 
-                                        @error('username')
+                                        @error('fname')
+                                            <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
+                                    {{-- nama belakang --}}
+                                    <div class="py-2">
+                                        <span class="px-1 text-sm text-gray-600">Nama belakang</span>
+                                        <input name="lname" placeholder="" type="text" value="{{ old('lname') }}"
+                                            class="@error('lname') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
+
+                                        @error('lname')
+                                            <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
+
+                                    {{-- tanggal lahir --}}
+                                    <div class="py-2">
+                                        <span class="px-1 text-sm text-gray-600">Tanggal lahir</span>
+                                        <input name="birthdate" placeholder="" type="Date"
+                                            value="{{ old('birthdate') }}"
+                                            class="@error('birthdate') border-red-500 @enderror  text-md block px-3 py-2  rounded-lg w-full 
+                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none ">
+
+                                        @error('birthdate')
                                             <span class="px-1 text-sm text-red-600">{{ $message }}</span>
                                         @enderror
                                     </div>
