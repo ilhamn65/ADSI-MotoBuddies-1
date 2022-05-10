@@ -63,18 +63,28 @@
                                         </div>
                                     </div>
 
-                                    <div class="flex justify-between"><label
-                                            class="block text-gray-500 font-bold my-4"><input type="checkbox"
-                                                class="leading-loose text-pink-600"> <span
-                                                class="py-2 text-sm text-gray-600 leading-snug"> Remember
-                                                Me </span></label> <label class="block text-gray-500 font-bold my-4"><a
-                                                href="#"
-                                                class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400"><span>Forgot
-                                                    Password?</span></a></label></div>
+                                    <div class="flex justify-between">
+                                        <label class="block text-gray-500 font-bold my-4">
+                                            <input name="remember" type="checkbox" class="leading-loose text-pink-600">
+                                            <span class="py-2 text-sm text-gray-600 leading-snug">
+                                                Remember Me
+                                            </span>
+                                        </label>
+
+
+                                        <label class="block text-gray-500 font-bold my-4">
+                                            <a href="#"
+                                                class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400">
+                                                <span>
+                                                    Forgot Password?
+                                                </span>
+                                            </a>
+                                        </label>
+                                    </div>
                                     <button
                                         class="mt-3 text-lg font-semibold 
-                bg-gray-800 w-full text-white rounded-lg
-                px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
+                                            bg-gray-800 w-full text-white rounded-lg
+                                            px-6 py-3 block shadow-xl hover:text-white hover:bg-black">
                                         Sign In
                                     </button>
 
