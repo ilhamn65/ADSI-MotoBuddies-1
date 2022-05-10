@@ -23,41 +23,46 @@
                         <div class="mt-6">
 
 
-                            <form class="mt-8">
-                                <div class="mx-auto max-w-lg">
+                            <form action="{{ route('login') }}" method="post" class="mt-8">
+                                @csrf
+                                <div class="mx-auto max-w-lg ">
+
+                                    @if (session('status'))
+                                        <div class="bg-red-500 p-2 text-center  text-white">
+                                            {{ session('status') }}
+                                        </div>
+                                    @endif
+
                                     <div class="py-2">
-                                        <span class="px-1 text-sm text-gray-600">Username</span>
-                                        <input name="username" placeholder="" type="text"
-                                            class="text-md block px-3 py-2  rounded-lg w-full 
+                                        <span class="px-1 text-sm text-gray-600">Email</span>
+                                        <input name="email" placeholder="" type="email"
+                                            class=" @error('email') border-red-500 @enderror text-md block px-3 py-2  rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md focus:placeholder-gray-500 focus:bg-white focus:border-gray-600 focus:outline-none">
+
+                                        @error('email')
+                                            <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                                        @enderror
+
                                     </div>
 
                                     <div class="py-2">
                                         <span class="px-1 text-sm text-gray-600">Password</span>
                                         <div class="relative">
                                             <input name="password" placeholder="" type='password'
-                                                class="text-md block px-3 py-2 rounded-lg w-full 
+                                                class=" @error('password') border-red-500 @enderror text-md block px-3 py-2 rounded-lg w-full 
                 bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md
                 focus:placeholder-gray-500
                 focus:bg-white 
                 focus:border-gray-600  
                 focus:outline-none">
 
-                                        </div>
-                                    </div>
-                                    <div class="py-2">
-                                        <span class="px-1 text-sm text-gray-600">Confirm Password</span>
-                                        <div class="relative">
-                                            <input placeholder="" name="password_confirmation" type='password'
-                                                class="text-md block px-3 py-2 rounded-lg w-full 
-                bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md
-                focus:placeholder-gray-500
-                focus:bg-white 
-                focus:border-gray-600  
-                focus:outline-none">
+                                            @error('password')
+                                                <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                                            @enderror
 
                                         </div>
                                     </div>
+
                                     <div class="flex justify-between"><label
                                             class="block text-gray-500 font-bold my-4"><input type="checkbox"
                                                 class="leading-loose text-pink-600"> <span

@@ -10,4 +10,30 @@ class LoginController extends Controller
     {
         return view('auth.login');
     }
+
+    public function store(Request $request)
+    {
+        // validate form
+        $this->validate(
+            $request,
+            [
+                'email' => 'required|email',
+                'password' => 'required',
+            ]
+        );
+
+        //sign in user
+        if (!(auth()->attempt($request->only('email', 'password')))) {
+
+            return back()->with('status', 'Invalid Login Credentials');
+        }
+
+
+
+
+
+        //redirect to dashboard
+
+        return redirect()->route('dashboard');
+    }
 }
