@@ -36,13 +36,15 @@
 
     </div>
 
-    <div id="search-bar">
-        <p class="my-2">Selamat Datang, Customer !</p>
-        <form action="">
+    @auth
+        <div id="search-bar">
+            <p class="my-2">Selamat Datang, Customer !</p>
+            <form action="">
 
-            <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">
-        </form>
-    </div>
+                <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">
+            </form>
+        </div>
+    @endauth
 
 
 

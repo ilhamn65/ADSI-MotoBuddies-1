@@ -29,6 +29,7 @@ class RegisterController extends Controller
             ]
         );
 
+        //sign up
         Pelanggan::create([
             'nama_lengkap' => $request->first_name . ' ' . $request->last_name,
             'tanggal_lahir' => $request->tanggal_lahir,
@@ -38,11 +39,13 @@ class RegisterController extends Controller
         ]);
 
 
-        //sign up
+        //sign In
 
-        //sign
+        auth()->attempt($request->only('email', 'password'));
+
 
         //redirect to dashboard
 
+        return redirect()->route('dashboard');
     }
 }
