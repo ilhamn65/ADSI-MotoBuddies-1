@@ -21,6 +21,7 @@
                 <div class="relative flex flex-wrap">
                     <div class="w-full relative">
                         <div class="mt-6">
+                            <img class="mx-auto" src="/images/LOGO.png" alt="logo">
 
 
                             <form action="{{ route('login') }}" method="post" class="mt-8">

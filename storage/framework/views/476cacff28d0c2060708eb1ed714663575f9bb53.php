@@ -84,7 +84,7 @@
                 <img src="/images/HOME.png" class="mx-auto h-6 " alt="HOME">Home
             </span>
         </a>
-        <a href="#"
+        <a href="<?php echo e(route('orderHistory')); ?>"
             class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
             <span class="tab tab-kategori block text-xs">

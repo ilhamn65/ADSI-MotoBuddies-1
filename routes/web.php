@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookServiceController;
+use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
@@ -35,3 +36,5 @@ Route::post('/auth/login', [LoginController::class, 'store']);
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
+
+Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');

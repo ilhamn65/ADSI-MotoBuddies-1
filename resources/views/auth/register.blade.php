@@ -20,6 +20,7 @@
             <div class="max-w-sm mx-auto px-6">
                 <div class="relative flex flex-wrap">
                     <div class="w-full relative">
+                        <img class="mx-auto" src="/images/LOGO.png" alt="logo">
                         <div class="mt-6">
 
 
