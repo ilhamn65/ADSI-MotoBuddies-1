@@ -50,7 +50,8 @@
         <div id="search-bar">
 
 
-            <p class="my-2">Selamat Datang, {{ auth()->user()->nama_lengkap }} !</p>
+            <p class="my-2">Selamat Datang, {{ auth()->user()->nama_depan }}
+                {{ auth()->user()->nama_belakang }} !</p>
             <form action="">
 
                 <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">

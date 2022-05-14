@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_lengkap');
+            $table->string('nama_depan');
+            $table->string('nama_belakang');
+            $table->string('photo_path')->nullable();
             $table->Date('tanggal_lahir');
             $table->string('alamat')->nullable();
             $table->string('no_telepon');

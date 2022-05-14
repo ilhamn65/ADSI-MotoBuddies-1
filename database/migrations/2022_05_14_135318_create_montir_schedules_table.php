@@ -13,8 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('booked_services', function (Blueprint $table) {
+        Schema::create('montir_schedules', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('montir_id')->nullable()->constrained()->onDelete('cascade');
+            $table->datetime('mulai');
+            $table->datetime('selesai');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('booked_services');
+        Schema::dropIfExists('montir_schedules');
     }
 };

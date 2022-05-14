@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('montirs', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_lengkap');
+            $table->string('nama_depan');
+            $table->string('nama_belakang');
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamps();
