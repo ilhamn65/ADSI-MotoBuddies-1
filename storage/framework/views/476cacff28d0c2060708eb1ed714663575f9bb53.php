@@ -64,7 +64,7 @@
 
 </nav>
 
-<body class="bg-gray-300  max-w-sm mx-auto">
+<body class="bg-gray-100  max-w-sm mx-auto">
 
     <?php echo $__env->yieldContent('content'); ?>
 
