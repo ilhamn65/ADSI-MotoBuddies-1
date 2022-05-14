@@ -44,6 +44,10 @@ class Pelanggan extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function kendaraan()
+    {
+        return $this->hasMany(Kendaraan::class);
+    }
 
     public function bookings()
     {
