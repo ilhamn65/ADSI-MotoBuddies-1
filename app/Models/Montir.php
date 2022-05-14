@@ -16,4 +16,15 @@ class Montir extends Model
         'email',
         'password',
     ];
+
+
+    public function schedules()
+    {
+        return $this->hasMany(MontirSchedule::class);
+    }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }

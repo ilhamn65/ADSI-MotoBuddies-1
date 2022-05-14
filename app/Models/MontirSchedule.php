@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class MontirSchedule extends Model
 {
     use HasFactory;
+
+
+    public function montir()
+    {
+        return $this->belongsTo(Montir::class);
+    }
 }
