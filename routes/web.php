@@ -6,6 +6,7 @@ use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\ServiceController;
 
 use App\Http\Controllers\ProfileController;
 
@@ -38,3 +39,7 @@ Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
+
+//testroute --- add service data
+
+Route::get('/service/test/add/123123123', [ServiceController::class, 'store']);
