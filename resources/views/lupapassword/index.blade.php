@@ -1,4 +1,5 @@
 @extends('layouts.auth')
 @section('content')
-    <h1>mdmsaldwoajds</h1>
+    <h1>mdmsadmasmkdsamdas</h1>
+    <p>aslmdkasmk;asmds</p>
 @endsection
