@@ -74,7 +74,7 @@
 
 
                                         <label class="block text-gray-500 font-bold my-4">
-                                            <a href="#"
+                                            <a href="{{route ('forgotpassword')}}"
                                                 class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400">
                                                 <span>
                                                     Forgot Password?

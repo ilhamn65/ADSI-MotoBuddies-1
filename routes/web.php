@@ -6,7 +6,7 @@ use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
-
+use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -32,6 +32,8 @@ Route::post('/auth/register', [RegisterController::class, 'store']);
 
 Route::get('/auth/login', [LoginController::class, 'index'])->name('login');
 Route::post('/auth/login', [LoginController::class, 'store']);
+
+Route::get('/auth/forgotpassword', [ForgotPasswordController::class,'index'])->name('forgotpassword');
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
