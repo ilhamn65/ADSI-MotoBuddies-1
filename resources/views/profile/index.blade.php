@@ -15,7 +15,7 @@
             </div>
             <div class="w-9/12 flex items-center">
                 <div class="w-10/12 flex flex-col leading-none pl-4">
-                    <p class="text-2xl font-bold">{{ auth()->user()->nama_lengkap }}</p>
+                    <p class="text-2xl font-bold">{{ auth()->user()->nama_depan }} {{ auth()->user()->nama_belakang }}</p>
                     <p class="text-sm pt-1 font-light text-gray-700">Alamat disini</p>
                 </div>
                 <div class="w-2/12">

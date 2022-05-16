@@ -50,7 +50,9 @@
         <div id="search-bar">
 
 
-            <p class="my-2">Selamat Datang, <?php echo e(auth()->user()->nama_lengkap); ?> !</p>
+            <p class="my-2">Selamat Datang, <?php echo e(auth()->user()->nama_depan); ?>
+
+                <?php echo e(auth()->user()->nama_belakang); ?> !</p>
             <form action="">
 
                 <input class="text-gray-400 py-1 px-3 w-full" type="text" name="search" placeholder="Cari sesuatu ?">
@@ -64,7 +66,7 @@
 
 </nav>
 
-<body class="bg-gray-300  max-w-sm mx-auto">
+<body class="bg-gray-100  max-w-sm mx-auto">
 
     <?php echo $__env->yieldContent('content'); ?>
 

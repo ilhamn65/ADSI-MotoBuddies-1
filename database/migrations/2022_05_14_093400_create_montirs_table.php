@@ -13,18 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pelanggans', function (Blueprint $table) {
+        Schema::create('montirs', function (Blueprint $table) {
             $table->id();
             $table->string('nama_depan');
             $table->string('nama_belakang');
-            $table->string('photo_path')->nullable();
-            $table->Date('tanggal_lahir');
-            $table->string('alamat')->nullable();
-            $table->string('no_telepon');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -36,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pelanggans');
+        Schema::dropIfExists('montirs');
     }
 };
