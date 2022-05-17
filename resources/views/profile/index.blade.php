@@ -32,7 +32,17 @@
         </div>
 
         <div class="mt-12 px-4">
-            <h1 class="text font-bold"> Daftar Kendaraan</h1>
+
+
+            <div class="flex justify-between px-4 gap-4 my-4">
+
+                <h1 class="inline text font-bold"> Daftar Kendaraan</h1>
+
+                <a href="{{ route('addVehicle') }}"
+                    class="text-center w-12 h-6 rounded shadow  text-blue-700 bg-white font-extrabold">+
+                </a>
+            </div>
+
 
             <div class=" mt-2 mb-4">
                 <table class="table-auto w-full">
@@ -67,6 +77,8 @@
 
 
         </div>
+
+
 
 
         <div class=" my-24 text-center px-4 ">
