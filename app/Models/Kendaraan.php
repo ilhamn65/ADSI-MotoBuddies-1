@@ -10,6 +10,13 @@ class Kendaraan extends Model
     use HasFactory;
 
 
+    protected $fillable = [
+        'pelanggan_id',
+        'tipe',
+        'merek',
+        'model'
+    ];
+
     public function pelanggan()
     {
         return $this->belongsTo(Pelanggan::class);
