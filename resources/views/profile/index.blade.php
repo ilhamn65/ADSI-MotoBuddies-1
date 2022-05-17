@@ -48,18 +48,18 @@
                 <table class="table-auto w-full">
                     <thead class="bg-blue-500 text-white">
                         <tr>
-                            <th>Jenis</th>
                             <th>Merek</th>
                             <th>Model</th>
+                            <th>Plat Nomor</th>
                         </tr>
                     </thead>
                     <tbody class="bg-gray-50 text-center">
 
                         @foreach ($vehicles as $vehicle)
                             <tr class="border-2 border-gray-200">
-                                <td class="px-2 py-1 ">{{ $vehicle->tipe }}</td>
                                 <td class="px-2 py-1">{{ $vehicle->merek }}</td>
                                 <td class="px-2 py-1">{{ $vehicle->model }}</td>
+                                <td class="px-2 py-1 ">{{ $vehicle->plat_nomor }}</td>
                             </tr>
                         @endforeach
 

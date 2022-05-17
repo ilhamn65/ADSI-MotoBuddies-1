@@ -66,6 +66,21 @@
 
 
 
+            <div class=" flex justify-start items-end gap-2 mb-2">
+                <img class="h-7 w-7" src="{{ asset('/images/CAR.png') }}" alt="car icon">
+                <div>
+
+                    <label class="text-sm" for="plat_nomor">Plat Nomor Kendaraan</label>
+                    <input class="w-full" type="text" name="plat_nomor" placeholder="">
+                    @error('plat_nomor')
+                        <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                    @enderror
+
+                </div>
+
+            </div>
+
+
 
 
             <div class="text-center my-14 shadow">

@@ -18,15 +18,16 @@ class AddVehicleController extends Controller
         $this->validate(
             $request,
             [
-                'tipe' => ['required', 'max:255'],
-                'merek' => 'required|max:255',
+                'tipe' => 'required',
+                'merek' => ['required', 'max:255'],
                 'model' => 'required|max:255',
+                'plat_nomor' => ['required', 'max:255']
 
             ]
         );
 
 
-        $request->user()->kendaraans()->create($request->only('tipe', 'merek', 'model'));
+        $request->user()->kendaraans()->create($request->only('tipe', 'merek', 'model', 'plat_nomor'));
 
         return   $request->route == "book" ? redirect()->route('book') : redirect()->route('profile');
     }
