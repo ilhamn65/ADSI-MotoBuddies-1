@@ -14,7 +14,8 @@ class Kendaraan extends Model
         'pelanggan_id',
         'tipe',
         'merek',
-        'model'
+        'model',
+        'plat_nomor'
     ];
 
     public function pelanggan()

@@ -39,20 +39,31 @@
 
 
 
-            <div class=" flex justify-start items-end gap-2 mb-2">
+            <div class="my-4 flex justify-start items-end gap-2 ">
                 <img class="h-7 w-7" src="{{ asset('/images/CAR.png') }}" alt="car icon">
                 <div>
 
                     <label class="text-sm" for="tipe">Kendaraan</label>
-                    <select class="w-56" name="tipe" id="">
-                        <option value="Mobil">Mobil BMW</option>
-                        <option value="Motor">Motor BMW</option>
-                    </select>
 
+                    @if ($vehicles->count())
+                        <select class="w-56" name="vehicle" id="">
+
+                            @foreach ($vehicles as $vehicle)
+                                <option value="{{ $vehicle->id }}">{{ $vehicle->merek . ' ' . $vehicle->model }}
+                                </option>
+                            @endforeach
+
+                        </select>
+                    @else
+                        <div class="px-5 ">
+
+                            Tambah Kendaraan Sebelum Melanjutkan
+                        </div>
+                    @endif
                 </div>
 
                 <a href="{{ route('addVehicle') }}"
-                    class="text-center w-12 h-6 rounded shadow  text-blue-700 bg-white font-extrabold">+</a>
+                    class="text-center px-4 py-2 rounded shadow  text-blue-700 bg-white font-extrabold"> +</a>
 
             </div>
 
@@ -61,7 +72,7 @@
                 <img class="h-7 w-7" src="{{ asset('/images/NOTE.png') }}" alt="note">
                 <div>
 
-                    <label class="text-sm" for="problemDesc">Deskripsi Permasalahan</label>
+                    <label class="text-sm" for="deskripsi_permasalahan">Deskripsi Permasalahan</label>
                     <textarea name="deskripsi_permasalahan" class="w-56 h-32" type="text-area"
                         value="{{ old('deskripsi_permasalahan') }}"></textarea>
                 </div>

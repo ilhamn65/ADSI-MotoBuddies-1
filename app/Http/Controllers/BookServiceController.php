@@ -8,6 +8,19 @@ class BookServiceController extends Controller
 {
     public function index()
     {
-        return view('book.index');
+
+        $vehicles = auth()->user()->kendaraans;
+
+        return view('book.index', [
+            "vehicles" => $vehicles,
+        ]);
+    }
+
+
+
+    public function store(Request $request)
+    {
+
+        dd($request->vehicle);
     }
 }
