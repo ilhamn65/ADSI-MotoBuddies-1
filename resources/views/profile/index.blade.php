@@ -10,12 +10,12 @@
         </div>
         <div class="flex items-center px-4 pt-12 justify-between">
             <div class="w-24 h-24 bg-blue-600 flex items-center rounded-full">
-                <img class="h-20 w-20 mx-auto"
-                    src="https://lnmlpexiwaspywjbwwvd.supabase.in/storage/v1/object/sign/assets/boy.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhc3NldHMvYm95LnBuZyIsImlhdCI6MTYzMzUzMzk2NywiZXhwIjoxOTQ4ODkzOTY3fQ.HL6DqbdJMCZI6dqEN-ZQAu5EwtblW7r8YNuud4_kHV8">
+                <img class="h-20 w-20 mx-auto" src="" alt="pp">
             </div>
             <div class="w-9/12 flex items-center">
                 <div class="w-10/12 flex flex-col leading-none pl-4">
-                    <p class="text-2xl font-bold">{{ auth()->user()->nama_lengkap }}</p>
+                    <p class="text-2xl font-bold">{{ auth()->user()->nama_depan }} {{ auth()->user()->nama_belakang }}
+                    </p>
                     <p class="text-sm pt-1 font-light text-gray-700">Alamat disini</p>
                 </div>
                 <div class="w-2/12">
@@ -30,6 +30,55 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-12 px-4">
+
+
+            <div class="flex justify-between px-4 gap-4 my-4">
+
+                <h1 class="inline text font-bold"> Daftar Kendaraan</h1>
+
+                <a href="{{ route('addVehicle') }}"
+                    class="text-center w-12 h-6 rounded shadow  text-blue-700 bg-white font-extrabold">+
+                </a>
+            </div>
+
+
+            <div class=" mt-2 mb-4">
+                <table class="table-auto w-full">
+                    <thead class="bg-blue-500 text-white">
+                        <tr>
+                            <th>Jenis</th>
+                            <th>Merek</th>
+                            <th>Model</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-50 text-center">
+
+                        @foreach ($vehicles as $vehicle)
+                            <tr>
+                                <td class=" px-2">{{ $vehicle->tipe }}</td>
+                                <td class="px-2">{{ $vehicle->merek }}</td>
+                                <td class="px-2">{{ $vehicle->model }}</td>
+                            </tr>
+                        @endforeach
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="flex justify-center">
+
+                {{ $vehicles->links() }}
+
+            </div>
+
+
+
+        </div>
+
+
 
 
         <div class=" my-24 text-center px-4 ">

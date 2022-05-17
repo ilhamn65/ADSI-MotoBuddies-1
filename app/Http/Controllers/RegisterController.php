@@ -37,7 +37,8 @@ class RegisterController extends Controller
 
         //sign up
         Pelanggan::create([
-            'nama_lengkap' => $request->first_name . ' ' . $request->last_name,
+            'nama_depan' => $request->first_name,
+            'nama_belakang' => $request->last_name,
             'tanggal_lahir' => $request->tanggal_lahir,
             'email' => $request->email,
             'no_telepon' => $request->no_telepon,

@@ -6,8 +6,10 @@ use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\ServiceController;
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AddVehicleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +36,16 @@ Route::get('/auth/login', [LoginController::class, 'index'])->name('login');
 Route::post('/auth/login', [LoginController::class, 'store']);
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::get('/profile/add-vehicle', [AddVehicleController::class, 'index'])->name('addVehicle');
+Route::post('/profile/add-vehicle', [AddVehicleController::class, 'store']);
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
+Route::post('/book', [BookServiceController::class, 'store'])->middleware('auth');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
+
+
+
+//testroute --- add service data
+
+Route::get('/service/test/add/123123123', [ServiceController::class, 'store']);

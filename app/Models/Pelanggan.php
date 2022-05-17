@@ -17,7 +17,8 @@ class Pelanggan extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'nama_lengkap',
+        'nama_depan',
+        'nama_belakang',
         'tanggal_lahir',
         'no_telepon',
         'email',
@@ -42,4 +43,14 @@ class Pelanggan extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function kendaraans()
+    {
+        return $this->hasMany(Kendaraan::class);
+    }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
