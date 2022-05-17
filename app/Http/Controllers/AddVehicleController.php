@@ -25,15 +25,8 @@ class AddVehicleController extends Controller
             ]
         );
 
-        Kendaraan::create([
-            'pelanggan_id' => auth()->user()->id,
-            'tipe' => $request->tipe,
-            'merek' => $request->merek,
-            'model' => $request->model,
-        ]);
 
-
-
+        $request->user()->kendaraans()->create($request->only('tipe', 'merek', 'model'));
 
         return   $request->route == "book" ? redirect()->route('book') : redirect()->route('profile');
     }
