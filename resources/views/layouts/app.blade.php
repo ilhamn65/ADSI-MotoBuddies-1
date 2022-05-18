@@ -10,7 +10,7 @@
 </head>
 
 {{-- top navbar --}}
-<nav aria-label="sr-only" id="top-navigation" class=" bg-blue-400 p-6 text-white  rounded-b-2xl ">
+<nav aria-label="sr-only" id="top-navigation" class="bg-blue-400 p-6 text-white  rounded-b-2xl ">
     <div id="notification" class="flex justify-between mb-8">
 
         <div>
