@@ -91,7 +91,7 @@
 
 
 
-                            @foreach ([0, 1, 2] as $index)
+                            @foreach ($chosenServices as $index => $chosenService)
                                 <div class="flex justify-evenly gap-3 my-1">
 
                                     <select class="w-60" name="bookedServices[{{ $index }}][service]">

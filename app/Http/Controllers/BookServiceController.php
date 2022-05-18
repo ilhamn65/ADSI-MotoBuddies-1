@@ -16,12 +16,17 @@ class BookServiceController extends Controller
     public function index()
     {
 
+
         $vehicles = auth()->user()->kendaraans;
         $services = Service::get();
+        $chosenServices = [
+            []
+        ];
 
         return view('book.index', [
             "vehicles" => $vehicles,
             "services" => $services,
+            "chosenServices" => $chosenServices
         ]);
     }
 
@@ -29,10 +34,6 @@ class BookServiceController extends Controller
 
     public function store(Request $request)
     {
-
-
-
-
 
         $this->validate(
             $request,
