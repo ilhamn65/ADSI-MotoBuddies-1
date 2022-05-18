@@ -28,6 +28,12 @@ class Services extends Component
             ['id' => ''];
     }
 
+    public function removeService($index)
+    {
+        unset($this->chosenServices[$index]);
+        return array_values($this->chosenServices);
+    }
+
     public function render()
     {
         return view('livewire.services');

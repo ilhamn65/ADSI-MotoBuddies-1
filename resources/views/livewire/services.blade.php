@@ -1,5 +1,5 @@
-<form action="{{ route('book') }}" method="post">
-    @csrf
+<div>
+
     <div class="flex justify-start items-end gap-2 mb-2 ">
         <div class="">
 
@@ -12,10 +12,9 @@
                 @foreach ($chosenServices as $index => $chosenService)
                     <div class="flex justify-evenly gap-3 my-1">
 
-                        <select class="w-60" name="bookedServices[{{ $index }}][service]">
-                            @if ($services->count())
-                                <option value="">-- Choose Services --</option>
-                            @else
+                        <select class="w-60" name="bookedServices[{{ $index }}][service]"
+                            wire:model="chosenServices.{{ $index }}.id">
+                            @if (!$services->count())
                                 <option value="">--- Service Unavailable ---</option>
                             @endif
                             @foreach ($services as $service)
@@ -24,8 +23,8 @@
                                 </option>
                             @endforeach
                         </select>
-                        <button href="#"
-                            class="text-center px-2 py-1 rounded shadow-lg font-bold bg-white  text-red-500">
+                        <button href="#" class="text-center px-2 py-1 rounded shadow-lg font-bold bg-white  text-red-500"
+                            wire:click.prevent="removeService({{ $index }})">
                             X
                         </button>
                     </div>
@@ -44,4 +43,4 @@
         </button>
     </div>
 
-</form>
+</div>
