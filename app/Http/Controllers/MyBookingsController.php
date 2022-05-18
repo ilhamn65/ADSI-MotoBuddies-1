@@ -2,23 +2,26 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
+class MyBookingsController extends Controller
 {
-
     public function __construct()
     {
         $this->middleware(['auth']);
     }
 
+
+
     public function index(Request $request)
     {
-
-        $vehicles = $request->user()->kendaraans()->paginate(5);
+        $bookings = $request->user()->bookings()->paginate(5);
         return view(
-            'profile.index',
-            ['vehicles' => $vehicles]
+            'mybookings.index',
+            [
+                'bookings' => $bookings,
+            ]
         );
     }
 }

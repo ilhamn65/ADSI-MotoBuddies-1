@@ -7,7 +7,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ServiceController;
-
+use App\Http\Controllers\MyBookingsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AddVehicleController;
 
@@ -41,6 +41,8 @@ Route::post('/profile/add-vehicle', [AddVehicleController::class, 'store']);
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
 Route::post('/book', [BookServiceController::class, 'store'])->middleware('auth');
+
+Route::get('/mybookings', [MyBookingsController::class, 'index'])->name('bookingSchedule');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
 

@@ -23,7 +23,8 @@
                                 </option>
                             @endforeach
                         </select>
-                        <button href="#" class="text-center px-2 py-1 rounded shadow-lg font-bold bg-white  text-red-500"
+                        <button href="#"
+                            class="text-center  px-2 py-1 rounded shadow-lg font-bold bg-white  text-red-500"
                             wire:click.prevent="removeService({{ $index }})">
                             X
                         </button>

@@ -90,8 +90,9 @@
 
             <div class="text-center my-14 mb-24 shadow">
 
-                <button class="bg-blue-500 hover:bg-blue-700 text-white text  py-2  w-full  shadow-lg rounded ">Cari
-                    Jadwal</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white text  py-2  w-full  shadow-lg rounded ">
+                    Cari Jadwal
+                </button>
             </div>
 
 
