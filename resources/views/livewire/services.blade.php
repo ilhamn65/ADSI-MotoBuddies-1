@@ -1,6 +1,6 @@
-<div>
+<div class="my-4">
 
-    <div class="flex justify-start items-end gap-2 mb-2 ">
+    <div class="flex justify-between gap-2 mb-2 ">
         <div class="">
 
             <label class=" text-sm font-bold" for="tipe">Service yang Diinginkan</label>
