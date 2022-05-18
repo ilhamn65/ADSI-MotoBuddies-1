@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Motobuddies</title>
+    <?php echo \Livewire\Livewire::styles(); ?>
+
     <link rel="stylesheet" href="/css/app.css">
 </head>
 
@@ -70,6 +72,7 @@
 
     <?php echo $__env->yieldContent('content'); ?>
 
+    <?php echo \Livewire\Livewire::scripts(); ?>
 
 </body>
 

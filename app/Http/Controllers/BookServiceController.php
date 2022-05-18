@@ -18,15 +18,9 @@ class BookServiceController extends Controller
 
 
         $vehicles = auth()->user()->kendaraans;
-        $services = Service::get();
-        $chosenServices = [
-            []
-        ];
 
         return view('book.index', [
             "vehicles" => $vehicles,
-            "services" => $services,
-            "chosenServices" => $chosenServices
         ]);
     }
 

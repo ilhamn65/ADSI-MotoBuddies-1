@@ -6,6 +6,8 @@
 
         <h1 class="text-2xl  font-bold mt-6 mb-4 shadow px-2 rounded">Book Service</h1>
 
+
+
         <form class="" action="{{ route('book') }}" method="post">
 
             @csrf
@@ -81,47 +83,8 @@
 
 
             <div class="my-4 ">
+                @livewire('services')
 
-                <div class="flex justify-start items-end gap-2 mb-2 ">
-                    <div class="">
-
-                        <label class=" text-sm font-bold" for="tipe">Service yang Diinginkan</label>
-
-                        <div class="bg-gray-200 px-5 py-2 mt-2">
-
-
-
-                            @foreach ($chosenServices as $index => $chosenService)
-                                <div class="flex justify-evenly gap-3 my-1">
-
-                                    <select class="w-60" name="bookedServices[{{ $index }}][service]">
-                                        @if ($services->count())
-                                            <option value="">-- Choose Services --</option>
-                                        @else
-                                            <option value="">--- Service Unavailable ---</option>
-                                        @endif
-                                        @foreach ($services as $service)
-                                            <option value="{{ $service }}">{{ $service->nama }}
-                                                Rp.{{ $service->harga }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                    <a href="#"
-                                        class="text-center px-2 py-1 rounded shadow-lg font-bold bg-white  text-red-500">X</a>
-                                </div>
-                            @endforeach
-
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="flex justify-end">
-                    <a href="#"
-                        class="text-center  px-4 py-2 w-full text-sm rounded shadow-md hover:bg-gray-300 bg-gray-200 text-gray-700 ">Tambah
-                        Service +
-                    </a>
-                </div>
             </div>
 
 
