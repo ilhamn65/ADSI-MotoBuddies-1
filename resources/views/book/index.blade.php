@@ -20,11 +20,15 @@
 
                 <div>
 
-                    <label class="text-sm" for="date">Tanggal Datang</label>
+                    <label class="text-sm @error('date') bg-red-500 text-white px-2 pt-1 @enderror" for="date">Tanggal
+                        Datang</label>
                     {{-- findout how to extract current time and currentdate+15 --}}
-                    <input class="w-full" name="date" min="{{ \Carbon\carbon::tomorrow()->toDateString() }}"
+                    <input class="w-full " name="date" min="{{ \Carbon\carbon::tomorrow()->toDateString() }}"
                         max="{{ \Carbon\carbon::tomorrow()->addDays(7)->toDateString() }}" type="date"
                         value="{{ old('date') }}">
+                    @error('date')
+                        <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                    @enderror
 
                 </div>
                 <select name="time" id="" value="{{ old('time') }}">
@@ -75,9 +79,13 @@
                 <img class="h-7 w-7" src="{{ asset('/images/NOTE.png') }}" alt="note">
                 <div>
 
-                    <label class="text-sm" for="deskripsi_permasalahan">Deskripsi Permasalahan</label>
+                    <label class="text-sm  @error('deskripsi_permasalahan') bg-red-500 text-white px-2 pt-1 @enderror"
+                        for="deskripsi_permasalahan">Deskripsi Permasalahan</label>
                     <textarea name="deskripsi_permasalahan" class="w-56 h-32" type="text-area" placeholder=""
                         value="{{ old('deskripsi_permasalahan') }}""></textarea>
+                    @error('deskripsi_permasalahan')
+                        <span class="px-1 text-sm text-red-600">{{ $message }}</span>
+                    @enderror
                 </div>
             </div>
 
@@ -91,7 +99,7 @@
             <div class="text-center my-14 mb-24 shadow">
 
                 <button class="bg-blue-500 hover:bg-blue-700 text-white text  py-2  w-full  shadow-lg rounded ">
-                    Cari Jadwal
+                    Book Service
                 </button>
             </div>
 
