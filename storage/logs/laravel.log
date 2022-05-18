@@ -15284,3 +15284,223 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(87): Carbon\\Carbon::safeCreateD
 #59 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\Web developm...')
 #60 {main}
 "} 
+[2022-05-18 15:38:36] local.ERROR: Undefined constant "id" {"view":{"view":"D:\\Web development\\motobuddies-app\esources\\views\\mybookings\\details.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1333839326 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#382</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1333839326\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","booking":"<pre class=sf-dump id=sf-dump-229254298 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Booking</span> {<a class=sf-dump-ref>#1073</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"8 characters\">bookings</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:22</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>6</span>
+    \"<span class=sf-dump-key>pelanggan_id</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>montir_id</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>nama_pelanggan</span>\" => \"<span class=sf-dump-str title=\"12 characters\">Arrafii Alfa</span>\"
+    \"<span class=sf-dump-key>no_telepon_pelanggan</span>\" => \"<span class=sf-dump-str title=\"12 characters\">082123587778</span>\"
+    \"<span class=sf-dump-key>email_pelanggan</span>\" => \"<span class=sf-dump-str title=\"23 characters\">arrafiialfa.m@gmail.com</span>\"
+    \"<span class=sf-dump-key>waktu_mulai</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-24 11:00:00</span>\"
+    \"<span class=sf-dump-key>perkiraan_waktu_selesai</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-24 14:00:00</span>\"
+    \"<span class=sf-dump-key>waktu_selesai</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>perkiraan_harga</span>\" => <span class=sf-dump-num>3030000</span>
+    \"<span class=sf-dump-key>harga</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>discount</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>harga_akhir</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>batal</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>alasan_batal</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-18 15:18:12</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-18 15:18:12</span>\"
+    \"<span class=sf-dump-key>deskripsi_permasalahan</span>\" => \"<span class=sf-dump-str title=\"11 characters\">sdasdasdasd</span>\"
+    \"<span class=sf-dump-key>tipe_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">mobil</span>\"
+    \"<span class=sf-dump-key>merek_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">Honda</span>\"
+    \"<span class=sf-dump-key>model_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">15488</span>\"
+    \"<span class=sf-dump-key>plat_nomor_kendaraan</span>\" => \"<span class=sf-dump-str title=\"8 characters\">B1212ZXC</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:22</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>6</span>
+    \"<span class=sf-dump-key>pelanggan_id</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>montir_id</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>nama_pelanggan</span>\" => \"<span class=sf-dump-str title=\"12 characters\">Arrafii Alfa</span>\"
+    \"<span class=sf-dump-key>no_telepon_pelanggan</span>\" => \"<span class=sf-dump-str title=\"12 characters\">082123587778</span>\"
+    \"<span class=sf-dump-key>email_pelanggan</span>\" => \"<span class=sf-dump-str title=\"23 characters\">arrafiialfa.m@gmail.com</span>\"
+    \"<span class=sf-dump-key>waktu_mulai</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-24 11:00:00</span>\"
+    \"<span class=sf-dump-key>perkiraan_waktu_selesai</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-24 14:00:00</span>\"
+    \"<span class=sf-dump-key>waktu_selesai</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>perkiraan_harga</span>\" => <span class=sf-dump-num>3030000</span>
+    \"<span class=sf-dump-key>harga</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>discount</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>harga_akhir</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>batal</span>\" => <span class=sf-dump-num>0</span>
+    \"<span class=sf-dump-key>alasan_batal</span>\" => <span class=sf-dump-const>null</span>
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-18 15:18:12</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2022-05-18 15:18:12</span>\"
+    \"<span class=sf-dump-key>deskripsi_permasalahan</span>\" => \"<span class=sf-dump-str title=\"11 characters\">sdasdasdasd</span>\"
+    \"<span class=sf-dump-key>tipe_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">mobil</span>\"
+    \"<span class=sf-dump-key>merek_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">Honda</span>\"
+    \"<span class=sf-dump-key>model_kendaraan</span>\" => \"<span class=sf-dump-str title=\"5 characters\">15488</span>\"
+    \"<span class=sf-dump-key>plat_nomor_kendaraan</span>\" => \"<span class=sf-dump-str title=\"8 characters\">B1212ZXC</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dates</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:14</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"12 characters\">pelanggan_id</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"9 characters\">montir_id</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"14 characters\">nama_pelanggan</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"20 characters\">no_telepon_pelanggan</span>\"
+    <span class=sf-dump-index>4</span> => \"<span class=sf-dump-str title=\"15 characters\">email_pelanggan</span>\"
+    <span class=sf-dump-index>5</span> => \"<span class=sf-dump-str title=\"11 characters\">waktu_mulai</span>\"
+    <span class=sf-dump-index>6</span> => \"<span class=sf-dump-str title=\"23 characters\">perkiraan_waktu_selesai</span>\"
+    <span class=sf-dump-index>7</span> => \"<span class=sf-dump-str title=\"15 characters\">perkiraan_harga</span>\"
+    <span class=sf-dump-index>8</span> => \"<span class=sf-dump-str title=\"5 characters\">batal</span>\"
+    <span class=sf-dump-index>9</span> => \"<span class=sf-dump-str title=\"22 characters\">deskripsi_permasalahan</span>\"
+    <span class=sf-dump-index>10</span> => \"<span class=sf-dump-str title=\"14 characters\">tipe_kendaraan</span>\"
+    <span class=sf-dump-index>11</span> => \"<span class=sf-dump-str title=\"15 characters\">merek_kendaraan</span>\"
+    <span class=sf-dump-index>12</span> => \"<span class=sf-dump-str title=\"15 characters\">model_kendaraan</span>\"
+    <span class=sf-dump-index>13</span> => \"<span class=sf-dump-str title=\"20 characters\">plat_nomor_kendaraan</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-229254298\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":1,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined constant \"id\" at D:\\Web development\\motobuddies-app\\storage\\framework\\views\\2b519070c677f7120b6f6733cd006cc3e76d6d68.php:13)
+[stacktrace]
+#0 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
+#1 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Web developm...', Array)
+#3 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Web developm...', Array)
+#4 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\LivewireViewCompilerEngine->evaluatePath('D:\\\\Web developm...', Array)
+#5 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Web developm...', Array)
+#6 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Livewire\\LivewireViewCompilerEngine->get('D:\\\\Web developm...', Array)
+#7 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#8 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#9 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(833): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(802): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(725): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(726): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(703): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(656): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\Web development\\motobuddies-app\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\Web developm...')
+#56 {main}
+
+[previous exception] [object] (Error(code: 0): Undefined constant \"id\" at D:\\Web development\\motobuddies-app\\storage\\framework\\views\\2b519070c677f7120b6f6733cd006cc3e76d6d68.php:13)
+[stacktrace]
+#0 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
+#1 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Web developm...', Array)
+#3 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(69): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Web developm...', Array)
+#4 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\LivewireViewCompilerEngine->evaluatePath('D:\\\\Web developm...', Array)
+#5 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Web developm...', Array)
+#6 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Livewire\\LivewireViewCompilerEngine->get('D:\\\\Web developm...', Array)
+#7 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#8 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#9 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(833): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(802): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(725): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(726): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(703): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(667): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(656): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Web development\\motobuddies-app\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\Web development\\motobuddies-app\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\Web development\\motobuddies-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\Web developm...')
+#56 {main}
+"} 
