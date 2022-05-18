@@ -34,7 +34,7 @@
                 <img src="/images/TIPS.png" class="h-16 mx-auto" alt="TIPSTRICKS">
                 <span>Tips and Tricks</span>
             </a>
-            <a href="#"
+            <a href="{{ route('services') }}"
                 class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
                 <img src="/images/SERVICES.png" class="h-16 mx-auto" alt="SERVICES">

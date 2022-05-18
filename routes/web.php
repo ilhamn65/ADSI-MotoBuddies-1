@@ -7,6 +7,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\MyBookingsController;
 use App\Http\Controllers\BookingDetailsController;
 use App\Http\Controllers\ProfileController;
@@ -51,6 +52,8 @@ Route::get('/mybookings/{booking}/details', [BookingDetailsController::class, 'i
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
 
+Route::get('/service', [ServiceController::class, 'index'])->name('services');
+Route::get('/service/{service}/details', [ServiceDetailsController::class, 'index'])->name('services.details');
 
 
 //testroute --- add service data
