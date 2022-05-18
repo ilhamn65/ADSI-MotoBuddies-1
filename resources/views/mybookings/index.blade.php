@@ -20,7 +20,8 @@
                         <td class="px-2 py-1">{{ $booking->merek_kendaraan }} {{ $booking->model_kendaraan }}</td>
                         <td class="px-2 py-1">Rp. {{ $booking->perkiraan_harga }} </td>
                         <td class="px-2 py-1 ">{{ $booking->waktu_mulai }}</td>
-                        <td class="px-2 py-1 "><a class="text-blue-600" href="">detail</a></td>
+                        <td class="px-2 py-1 "><a class="text-blue-600"
+                                href="{{ route('myBookings.details', $booking) }}">detail</a></td>
                     </tr>
                 @endforeach
 
