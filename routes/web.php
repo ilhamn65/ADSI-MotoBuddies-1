@@ -40,9 +40,12 @@ Route::get('/profile/add-vehicle', [AddVehicleController::class, 'index'])->name
 Route::post('/profile/add-vehicle', [AddVehicleController::class, 'store']);
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book')->middleware('auth');
-Route::post('/book', [BookServiceController::class, 'store'])->middleware('auth');
+Route::post('/book', [BookServiceController::class, 'store']);
+Route::get('/book/success', function () {
+    return view('book.success');
+})->name('book.success');
 
-Route::get('/mybookings', [MyBookingsController::class, 'index'])->name('bookingSchedule');
+Route::get('/mybookings', [MyBookingsController::class, 'index'])->name('myBookings');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
 

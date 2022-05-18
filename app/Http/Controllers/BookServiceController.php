@@ -81,7 +81,6 @@ class BookServiceController extends Controller
             $booking->booked_services()->attach(json_decode($bookedService['service'], false)->id);
         }
 
-
-        dd(Booking::get());
+        return redirect()->route('book.success');
     }
 }

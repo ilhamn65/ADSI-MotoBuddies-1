@@ -2,9 +2,9 @@
 
 @section('content')
     <div class=" mt-2 mb-4">
-        <table class="table-auto w-full">
+        <table class="table-auto w-full font-light">
             <thead class="bg-blue-500 text-white">
-                <tr>
+                <tr class=" font-normal">
 
                     <th>Kendaraan</th>
                     <th>Plat Nomor</th>
@@ -24,6 +24,22 @@
 
             </tbody>
         </table>
+
+        <div class="flex justify-center">
+
+            {{ $bookings->links() }}
+
+        </div>
+
+        <div class="text-center my-14 mb-24 shadow">
+
+            <button href="{{ route('book') }}"
+                class="bg-blue-500 hover:bg-blue-700 text-white text  py-2  w-full  shadow-lg rounded ">
+                Tambah Booking
+            </button>
+        </div>
+
+
 
     </div>
 @endsection
