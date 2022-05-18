@@ -7,7 +7,7 @@
 
 
 
-        <div class="grid grid-cols-2 gap-4 text-center my-12 text-sm ">
+        <div class="grid grid-cols-2 gap-4 text-center my-4 text-sm ">
 
             @foreach ($services as $service)
                 <a href="{{ route('services.details', $service) }}"
