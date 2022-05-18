@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama');
             $table->bigInteger('harga');
             $table->text('deskripsi');
+            $table->integer('perkiraan_durasi');
             $table->string('kartu_garansi')->nullable();
             $table->timestamps();
         });

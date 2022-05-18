@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('bookings', function (Blueprint $table) {
-            $table->string('jenis_kendaraan');
+            $table->string('tipe_kendaraan');
             $table->string('merek_kendaraan');
             $table->string('model_kendaraan');
             $table->string('plat_nomor_kendaraan');
