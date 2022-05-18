@@ -8,6 +8,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\MyBookingsController;
+use App\Http\Controllers\BookingDetailsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AddVehicleController;
 use App\Http\Controllers\TipsTricksController;
@@ -46,6 +47,7 @@ Route::get('/book/success', function () {
 })->name('book.success');
 
 Route::get('/mybookings', [MyBookingsController::class, 'index'])->name('myBookings');
+Route::get('/mybookings/{booking}/details', [BookingDetailsController::class, 'index'])->name('myBookings.details');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
 
