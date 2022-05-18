@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookServiceController;
-use App\Http\Controllers\KontenFaq;
+use App\Http\Controllers\KontenFaqController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 
 Route::get('/book', [BookServiceController::class, 'index'])->name('book');
-Route::get('/FAQ', [KontenFaq::class, 'index'])->name('FAQ');
+Route::get('/FAQ', [KontenFaqController::class, 'index'])->name('FAQ');
