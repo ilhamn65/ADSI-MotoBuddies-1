@@ -54,3 +54,7 @@ Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('or
 //testroute --- add service data
 
 Route::get('/service/test/add/123123123', [ServiceController::class, 'store']);
+
+//finddealer
+Route::get('/finddealer', function(){
+    return view('finddealer.index');})->name('find.dealer');

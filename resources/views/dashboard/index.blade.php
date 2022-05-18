@@ -8,7 +8,7 @@
 
 
         <div class="grid grid-cols-3 gap-4 text-center my-12 text-sm ">
-            <a href="#"
+            <a href="{{route('find.dealer')}}"
                 class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
                 <img src="/images/FIND.png" class="h-16 mx-auto" alt="find dealer">
