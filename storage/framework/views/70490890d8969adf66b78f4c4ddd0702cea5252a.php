@@ -22,7 +22,7 @@
                 <img src="/images/BOOK.png" class="h-16 mx-auto" alt="BOOK">
                 <span>Book Servis</span>
             </a>
-            <a href="#"
+            <a href="<?php echo e(route('products')); ?>"
                 class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
                 <img src="/images/SPAREPARTS.png" class="h-16 mx-auto" alt="SPAREPARTS">
