@@ -12,7 +12,7 @@ use App\Http\Controllers\MyBookingsController;
 use App\Http\Controllers\BookingDetailsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AddVehicleController;
-
+use App\Http\Controllers\TipsTricksController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,3 +59,7 @@ Route::get('/service/{service}/details', [ServiceDetailsController::class, 'inde
 //testroute --- add service data
 
 Route::get('/service/test/add/123123123', [ServiceController::class, 'store']);
+Route::prefix('tips-tricks')->group(function () {
+    Route::get('/', [TipsTricksController::class, 'index']);
+    Route::get('/{tiptrick}', [TipsTricksController::class, 'detail']);
+});
