@@ -6,6 +6,8 @@ use App\Http\Controllers\OrderHistoryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\MyBookingsController;
@@ -55,10 +57,15 @@ Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('or
 Route::get('/service', [ServiceController::class, 'index'])->name('services');
 Route::get('/service/{service}/details', [ServiceDetailsController::class, 'index'])->name('services.details');
 
+Route::get('/products', [ProductController::class, 'index'])->name('products');
+Route::get('/products/{product}/details', [ProductDetailsController::class, 'index'])->name('products.details');
+
 
 //testroute --- add service data
-
+Route::get('/products/test/123', [ProductController::class, 'store']);
 Route::get('/service/test/add/123123123', [ServiceController::class, 'store']);
+//testroutes
+
 Route::prefix('tips-tricks')->group(function () {
     Route::get('/', [TipsTricksController::class, 'index']);
     Route::get('/{tiptrick}', [TipsTricksController::class, 'detail']);
