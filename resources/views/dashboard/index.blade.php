@@ -28,7 +28,7 @@
                 <img src="/images/SPAREPARTS.png" class="h-16 mx-auto" alt="SPAREPARTS">
                 <span>Spare Parts</span>
             </a>
-            <a href="#"
+            <a href="/tips-tricks"
                 class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
                 <img src="/images/TIPS.png" class="h-16 mx-auto" alt="TIPSTRICKS">
