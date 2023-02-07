@@ -13,7 +13,16 @@
 <h4>Detail Aplikasi</h4>
 <p>
     Aplikasi dikembangkan menggunakan framework Laravel dan Tailwindcss 
+    
 </p>
+
+
+<h4>Dokumentasi Analisis dan Desain Sistem Informasi PT MotoBuddies</h4>
+<p>
+    https://s.ub.ac.id/adsi-b-kelompok1
+    
+</p>
+
 
 <h4>Tentang Aplikasi Motobuddies</h4>
 <p>
